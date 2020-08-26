@@ -1,7 +1,7 @@
 /**fetch API MovieDB**/
 class DataSource {
     static searchFilm(keyword) {
-        return fetch('https://api.themoviedb.org/3/search/movie?api_key=93690ebe288617edd2f813074329a79c&query=${keyword}')
+        return fetch(`https://api.themoviedb.org/3/search/movie?api_key=93690ebe288617edd2f813074329a79c&query=${keyword}`)
         .then(response => {
             return response.json();
         })
